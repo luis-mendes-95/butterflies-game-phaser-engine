@@ -1,0 +1,23 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="220px" height="30px" viewBox="0 0 220 30">
+<defs>
+<g id="alvo10_0_Layer0_0_FILL">
+<path fill="#ECECB5" stroke="none" d="
+M 128.05 4
+Q 128.05 0 124.05 0
+L 4 0
+Q 0 0 0 4
+L 0 13.55
+Q 0 17.55 4 17.55
+L 124.05 17.55
+Q 128.05 17.55 128.05 13.55
+L 128.05 4 Z"/>
+</g>
+</defs>
+
+<g id="alvo10" transform="matrix( 1.7180938720703125, 0, 0, 1.7099151611328125, 0,0) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#alvo10_0_Layer0_0_FILL"/>
+</g>
+</g>
+</svg>

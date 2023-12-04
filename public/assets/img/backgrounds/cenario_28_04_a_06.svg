@@ -1,0 +1,38 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="1200px" height="675px" viewBox="0 0 1200 675">
+<defs>
+<linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="533.0125" y1="759.5" x2="666.8875" y2="-84.60000000000002" spreadMethod="pad">
+<stop  offset="0%" stop-color="#E6F5FF"/>
+
+<stop  offset="100%" stop-color="#5DADE2"/>
+</linearGradient>
+
+<g id="Layer1_0_FILL">
+<path fill="url(#Gradient_1)" stroke="none" d="
+M 1199.95 675
+L 1199.95 0 0 0 0 675 1199.95 675 Z"/>
+</g>
+
+<g id="botao_bb_iniciar_0_Layer0_0_FILL">
+<path fill="#99FF00" fill-opacity="0" stroke="none" d="
+M 95.8 34.75
+L 95.8 0 0 0 0 34.75 95.8 34.75 Z"/>
+</g>
+</defs>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#Layer1_0_FILL"/>
+</g>
+
+<g id="botao_bb_continuar11" transform="matrix( 1.816864013671875, 0, 0, 1.9365234375, 772.2,630.35) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#botao_bb_iniciar_0_Layer0_0_FILL"/>
+</g>
+</g>
+
+<g id="botao_bb_voltar11" transform="matrix( 1.816864013671875, 0, 0, 1.9365234375, 185.45,630.35) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#botao_bb_iniciar_0_Layer0_0_FILL"/>
+</g>
+</g>
+</svg>
