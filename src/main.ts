@@ -2,7 +2,7 @@ import '/style.css'
 import Phaser from 'phaser'
 import { LoadScene } from './scenes/LoadScene';
 import { MenuScene } from './scenes/MenuScene';
-import { PlayScene } from './scenes/PlayScene';
+import { Scene1 } from './scenes/Scene1';
 
 
 //game configuration and calling main engine class
@@ -12,7 +12,7 @@ let game = new Phaser.Game({
     scene: [
         LoadScene,
         MenuScene,
-        PlayScene
+        Scene1
     ],
     render:{
         pixelArt: false

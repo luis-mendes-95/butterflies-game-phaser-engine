@@ -1,13 +1,13 @@
 // @ts-nocheck
-import { CST } from "../../src/CST"
+import { CST } from "../CST"
 import { Sprite } from "../Sprite";
 
 
 //calling scene class to render a scene in game
-export class MenuScene extends Phaser.Scene{
+export class Scene1 extends Phaser.Scene{
     constructor(){
         super({
-            key: CST.SCENES.MENU
+            key: CST.SCENES.SCENE1
         });
         
     }
@@ -18,7 +18,7 @@ export class MenuScene extends Phaser.Scene{
         //background display configurations
         const canvasWidth = this.game.renderer.width;
         const canvasHeight = this.game.renderer.height;
-        let backgroundImage = this.add.image(0, 0, "title_bg");
+        let backgroundImage = this.add.image(0, 0, "scene1_bg");
         backgroundImage.setOrigin(0.5, 0.5); // Set the origin to the center
         backgroundImage.setDepth(0);
         const scaleX = canvasWidth / backgroundImage.width;
@@ -28,12 +28,11 @@ export class MenuScene extends Phaser.Scene{
         backgroundImage.setPosition(canvasWidth / 2, canvasHeight / 2);
 
 
-        //add title and logo to the screen
-        let titleLetters = this.add.image(930, 250, "title_letters").setScale(1.3).setDepth(0);
-        let brandLogo = this.add.image(230, 50, "brand_logo").setScale(1.3).setDepth(0).setAlpha(0.5);
+        //add moldure to the screen
+        let moldure1 = this.add.image(960, 470, "moldure1").setScale(1.5).setDepth(0);
 
         //add sprites in screen
-        let startButton = this.add.image(300,200, "startButton").setOrigin(-2.3, -2.6).setScale(1.6).setDepth(0);
+        let continueButton = this.add.image(1600,850, "continueButton").setScale(1.6).setDepth(0);
         let hoverSprite = new Sprite(this, 100, 100, CST.SPRITE.BUTTERFLY).setVisible(false);
 
         //create audio
@@ -42,7 +41,11 @@ export class MenuScene extends Phaser.Scene{
         //    loop: true
         //})
 
-
+        this.input.on('pointermove', function (pointer) {
+            var mouseX = pointer.x;
+            var mouseY = pointer.y;
+            console.log('Mouse X:', mouseX, 'Mouse Y:', mouseY);
+        });
 
 
 
@@ -147,23 +150,23 @@ export class MenuScene extends Phaser.Scene{
 
 
         //set a invisible sprite to visible when hovering this element
-        startButton.setInteractive();
+        continueButton.setInteractive();
         //event pointerover (mouse in)
-        startButton.on("pointerover", ()=>{
+        continueButton.on("pointerover", ()=>{
             hoverSprite.setVisible(true);
             hoverSprite.play("fly");
-            hoverSprite.x = 750;
-            hoverSprite.y = 870;
+            hoverSprite.x = 1780;
+            hoverSprite.y = 745;
             this.input.setDefaultCursor("pointer");
         })
         //event pointerout (mouse out)
-        startButton.on("pointerout", ()=>{
+        continueButton.on("pointerout", ()=>{
             hoverSprite.setVisible(false);
             this.input.setDefaultCursor("default");
         })
         //event pointerup (clicked)
-        startButton.on("pointerup", ()=>{
-            this.scene.start(CST.SCENES.SCENE1);
+        continueButton.on("pointerup", ()=>{
+            this.scene.start(CST.SCENES.PLAY);
             this.input.setDefaultCursor("default");
         })
 
@@ -175,15 +178,15 @@ export class MenuScene extends Phaser.Scene{
 
         };
 
-        createButterfly("butterflyYellow", 150, 650);
-        createButterfly("butterflyRed", 370, 600);
-        createButterfly("butterflyorange", 650, 600);
-        createButterfly("butterflyBrown", 790, 720);
-        createButterfly("butterflyBlue", 1120, 580);
-        createButterfly("butterflyWhite", 1120, 720);
-        createButterfly("butterflyGreen", 1490, 720);
-        createButterfly("butterflyPink", 1590, 560);
-        createButterfly("butterfly", 1340, 540);
+        createButterfly("butterflyYellow", 580, 66);
+        createButterfly("butterflyRed", 587, 233);
+        createButterfly("butterflyorange", 619, 479);
+        createButterfly("butterflyBrown", 600, 726);
+        createButterfly("butterflyBlue", 1317, 104);
+        createButterfly("butterflyWhite", 1307, 229);
+        createButterfly("butterflyGreen", 1331, 608);
+        createButterfly("butterflyPink", 1322, 815);
+        createButterfly("butterfly", 1311, 442);
 
 
         

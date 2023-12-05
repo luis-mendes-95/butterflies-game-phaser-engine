@@ -17,10 +17,13 @@ export class LoadScene extends Phaser.Scene{
 
 
         //import assets - images
-        this.load.image("title_bg", "assets/img/backgrounds/title_bg.svg");
+        this.load.image("title_bg", "assets/img/backgrounds/title_bg.svg");  
+        this.load.image("scene1_bg", "assets/img/backgrounds/scene1_bg.svg");    
         this.load.image("startButton", "assets/img/buttons/startButton.svg");
+        this.load.image("continueButton", "assets/img/buttons/botao_continuar.svg");
         this.load.image("title_letters", "assets/img/backgrounds/nome_jogo.svg");
         this.load.image("brand_logo", "assets/img/brand_logo.svg");
+        this.load.image("moldure1", "assets/img/backgrounds/moldure1.svg");
 
 
 
@@ -59,7 +62,7 @@ export class LoadScene extends Phaser.Scene{
         })
         //event complete
         this.load.on("complete", ()=>{//manage load events when done
-            this.scene.start(CST.SCENES.MENU)
+            this.scene.start(CST.SCENES.SCENE1)
         })
         //event load
         this.load.on("load", (file: Phaser.Loader.File) => {//manage when a loading file event is done
