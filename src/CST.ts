@@ -2,7 +2,8 @@ export const CST = {
     SCENES: {
         LOAD: "LOAD",
         MENU: "MENU",
-        SCENE1: "SCENE1"
+        SCENE1: "SCENE1",
+        SCENE2: "SCENE2",
     },
     IMAGE:{
         LOGO: "logo.png",

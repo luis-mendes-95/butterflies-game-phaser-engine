@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'coop';
+  src: url('/assets/fonts/COOPBL.TTF');
+}
+
+@font-face {
+  font-family: 'insolata';
+  src: url('/assets/fonts/Inconsolata-Black.ttf');
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   --dkClor:#181818;
