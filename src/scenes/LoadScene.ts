@@ -28,36 +28,17 @@ export class LoadScene extends Phaser.Scene{
         //spritesheets - LOAD BUTTERFLIES
         this.load.spritesheet("butterfly", "assets/sprites/butterfly.svg", {frameHeight: 52, frameWidth: 78});
         this.load.spritesheet("butterflyYellow", "assets/sprites/butterflyYellow.svg", {frameHeight: 63, frameWidth: 75});
-        this.load.spritesheet("butterflyRed", "assets/sprites/butterflyRed.svg", {frameHeight: 63, frameWidth: 75});
-
-        this.load.spritesheet("butterflyOrange", "assets/sprites/butterflyOrange.svg", {frameHeight: 63, frameWidth: 75});
-        this.load.spritesheet("butterflyBrown", "assets/sprites/butterflyBrown.svg", {frameHeight: 63, frameWidth: 75});
-        this.load.spritesheet("butterflyBlue", "assets/sprites/butterflyBlue.svg", {frameHeight: 63, frameWidth: 75});
-        this.load.spritesheet("butterflyWhite", "assets/sprites/butterflyWhite.svg", {frameHeight: 63, frameWidth: 75});
-        this.load.spritesheet("butterflyBlack", "assets/sprites/butterflyBlack.svg", {frameHeight: 63, frameWidth: 75});
-        this.load.spritesheet("butterflyGreen", "assets/sprites/butterflyGreen.svg", {frameHeight: 63, frameWidth: 75});
-        this.load.spritesheet("butterflyPink", "assets/sprites/butterflyPink.svg", {frameHeight: 63, frameWidth: 75});
-
-
-
-
-
-
-
-
-
-
-
-
-
+        this.load.spritesheet("butterflyRed", "assets/sprites/butterflyRed.svg", {frameHeight: 64, frameWidth: 74});
+        this.load.spritesheet("butterflyorange", "assets/sprites/butterflyorange.png", {frameHeight: 52, frameWidth: 76});
+        this.load.spritesheet("butterflyBrown", "assets/sprites/butterflyBrown.svg", {frameHeight: 69, frameWidth: 70});
+        this.load.spritesheet("butterflyBlue", "assets/sprites/butterflyBlue.svg", {frameHeight: 52, frameWidth: 76});
+        this.load.spritesheet("butterflyWhite", "assets/sprites/butterflyWhite.svg", {frameHeight: 64, frameWidth: 74});
+        this.load.spritesheet("butterflyGreen", "assets/sprites/butterflyGreen.svg", {frameHeight: 52, frameWidth: 76});
+        this.load.spritesheet("butterflyPink", "assets/sprites/butterflyPink.svg", {frameHeight: 52, frameWidth: 76});
 
 
 
         this.load.spritesheet("anna", "assets/sprites/anna.png", {frameHeight: 64, frameWidth: 64});
-
-
-
-
 
 
         //load sprite sheet atlas

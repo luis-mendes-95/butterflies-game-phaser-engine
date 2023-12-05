@@ -49,6 +49,15 @@ export class MenuScene extends Phaser.Scene{
         //create animation for black butterfly
         this.anims.create({
             key: "fly",
+            frameRate: 4,
+            repeat: -1,
+            frames: this.anims.generateFrameNumbers("butterfly", {
+                frames: [0, 1, 2]
+            })
+        })
+        //create animation for black butterfly (2)
+        this.anims.create({
+            key: "butterfly",
             frameRate: 5,
             repeat: -1,
             frames: this.anims.generateFrameNumbers("butterfly", {
@@ -58,53 +67,53 @@ export class MenuScene extends Phaser.Scene{
         //create animation for yellow butterfly
         this.anims.create({
             key: "butterflyYellow",
-            frameRate: 5,
+            frameRate: 4,
             repeat: -1,
             frames: this.anims.generateFrameNumbers("butterflyYellow", {
                 frames: [0, 1, 2]
             })
         })
-        //create animation for red butterfly
+        ////create animation for red butterfly
         this.anims.create({
             key: "butterflyRed",
-            frameRate: 5,
+            frameRate: 3,
             repeat: -1,
             frames: this.anims.generateFrameNumbers("butterflyRed", {
                 frames: [0, 1, 2]
             })
         })
-            
-        //create animation for orange butterfly
+        //    
+        ////create animation for orange butterfly
         this.anims.create({
-            key: "butterflyOrange",
+            key: "butterflyorange",
             frameRate: 5,
             repeat: -1,
-            frames: this.anims.generateFrameNumbers("butterflyOrange", {
+            frames: this.anims.generateFrameNumbers("butterflyorange", {
                 frames: [0, 1, 2]
             })
         })
-
-        //create animation for brown butterfly
+//
+        ////create animation for brown butterfly
         this.anims.create({
             key: "butterflyBrown",
-            frameRate: 5,
+            frameRate: 4,
             repeat: -1,
             frames: this.anims.generateFrameNumbers("butterflyBrown", {
                 frames: [0, 1, 2]
             })
         })
-
-        //create animation for blue butterfly
+//
+        ////create animation for blue butterfly
         this.anims.create({
             key: "butterflyBlue",
-            frameRate: 5,
+            frameRate: 3,
             repeat: -1,
             frames: this.anims.generateFrameNumbers("butterflyBlue", {
                 frames: [0, 1, 2]
             })
         })       
         
-        //create animation for white butterfly
+        ////create animation for white butterfly
         this.anims.create({
             key: "butterflyWhite",
             frameRate: 5,
@@ -113,31 +122,21 @@ export class MenuScene extends Phaser.Scene{
                 frames: [0, 1, 2]
             })
         })
-
-        //create animation for black butterfly
-        this.anims.create({
-            key: "butterflyBlack",
-            frameRate: 5,
-            repeat: -1,
-            frames: this.anims.generateFrameNumbers("butterflyBlack", {
-                frames: [0, 1, 2]
-            })
-        })
-
-        //create animation for green butterfly
+//
+        ////create animation for green butterfly
         this.anims.create({
             key: "butterflyGreen",
-            frameRate: 5,
+            frameRate: 4,
             repeat: -1,
             frames: this.anims.generateFrameNumbers("butterflyGreen", {
                 frames: [0, 1, 2]
             })
         })        
         
-        //create animation for pink butterfly
+        ////create animation for pink butterfly
         this.anims.create({
             key: "butterflyPink",
-            frameRate: 5,
+            frameRate: 3,
             repeat: -1,
             frames: this.anims.generateFrameNumbers("butterflyPink", {
                 frames: [0, 1, 2]
@@ -169,22 +168,29 @@ export class MenuScene extends Phaser.Scene{
         })
 
         const createButterfly = (sprite, x, y) => {
-            let currentButterfly = this.add.sprite(x, y, sprite).setVisible(true);
-            currentButterfly.setVisible(true);
-            currentButterfly.play(sprite);
-            currentButterfly.x = x;
-            currentButterfly.y = y;
-        }
-        createButterfly("butterflyYellow", 110, 620);
-        createButterfly("butterflyRed", 210, 620);
+            let currentButterfly;
 
-        createButterfly("butterflyOrange", 210, 620);
-        createButterfly("butterflyBrown", 210, 620);
-        createButterfly("butterflyBlue", 210, 620);
-        createButterfly("butterflyWhite", 210, 620);
-        createButterfly("butterflyBlack", 210, 620);
-        createButterfly("butterflyGreen", 210, 620);
-        createButterfly("butterflyPink", 210, 620);
+            currentButterfly = this.add.sprite(x, y, sprite).setVisible(true).setScale(1.5);
+            currentButterfly.play(sprite);
+
+        };
+
+        createButterfly("butterflyYellow", 150, 650);
+        createButterfly("butterflyRed", 370, 600);
+        createButterfly("butterflyorange", 650, 600);
+        createButterfly("butterflyBrown", 790, 720);
+        createButterfly("butterflyBlue", 1120, 580);
+        createButterfly("butterflyWhite", 1120, 720);
+        createButterfly("butterflyGreen", 1490, 720);
+        createButterfly("butterflyPink", 1590, 560);
+        createButterfly("butterfly", 1340, 540);
+
+
+        
+
+
+
+
 
 
 
