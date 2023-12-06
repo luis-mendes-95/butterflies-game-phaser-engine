@@ -22,6 +22,7 @@ export class LoadScene extends Phaser.Scene{
         //general
         this.load.image("continueButton", "assets/img/buttons/botao_continuar.svg");
         this.load.image("textButton", "assets/img/buttons/botao_texto.svg");
+        this.load.image("returnButton", "assets/img/buttons/returnButton.svg");
         this.load.image("confirmButton", "assets/img/buttons/botao_confirmar.svg");
 
         //menu

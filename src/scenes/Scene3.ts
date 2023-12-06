@@ -6,17 +6,17 @@ import { Sprite } from "../Sprite";
 
 
 //calling scene class to render a scene in game
-export class Scene2 extends Phaser.Scene{
+export class Scene3 extends Phaser.Scene{
     constructor(){
         super({
-            key: CST.SCENES.SCENE2
+            key: CST.SCENES.SCENE3
         });
 
 
 
 
         this.isTextImageVisible = false;
-        this.titleQuestion = 'Clique na resposta correta de acordo com as informações do texto.'
+        this.titleQuestion = 'Cliquii na resposta correta de acordo com as informações do texto.'
         this.question =  'O texto que você acabou de ler é:'
         this.selectedQuestion = 'none'
         this.wrongQuestionText = 'Resposta Incorreta!'
@@ -354,7 +354,7 @@ export class Scene2 extends Phaser.Scene{
 
 
 
-        //CONTINUE BUTTON MOUSE FUNCTIONS
+        //RETURN BUTTON MOUSE FUNCTIONS
         continueButton.setInteractive();
         continueButton.on("pointerover", ()=>{
             blackButterfly.setVisible(true);
@@ -370,9 +370,13 @@ export class Scene2 extends Phaser.Scene{
             this.isTextImageVisible = false;
         })
         continueButton.on("pointerup", ()=>{
-
-            this.scene.start(CST.SCENES.SCENE3);
-            this.input.setDefaultCursor("default");
+            backgroundImage.setTexture("scene2_bg");
+            blackButterfly.setVisible(false);
+            continueButton.setVisible(false);
+            wrongQuestion.setVisible(false);
+            restartText.setVisible(false);
+            showAllElements();
+            checkCircle.setVisible(false);
 
         })
 
