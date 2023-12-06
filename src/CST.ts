@@ -5,6 +5,7 @@ export const CST = {
         SCENE1: "SCENE1",
         SCENE2: "SCENE2",
         SCENE3: "SCENE3",
+        SCENE4: "SCENE4",
     },
     IMAGE:{
         LOGO: "logo.png",

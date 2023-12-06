@@ -371,6 +371,7 @@ export class Scene2 extends Phaser.Scene{
         })
         continueButton.on("pointerup", ()=>{
 
+            
             this.scene.start(CST.SCENES.SCENE3);
             this.input.setDefaultCursor("default");
 

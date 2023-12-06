@@ -72,7 +72,7 @@ export class LoadScene extends Phaser.Scene{
         })
         //event complete
         this.load.on("complete", ()=>{//manage load events when done
-            this.scene.start(CST.SCENES.SCENE2)
+            this.scene.start(CST.SCENES.MENU)
         })
         //event load
         this.load.on("load", (file: Phaser.Loader.File) => {//manage when a loading file event is done

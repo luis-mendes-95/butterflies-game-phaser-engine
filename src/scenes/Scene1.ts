@@ -166,7 +166,7 @@ export class Scene1 extends Phaser.Scene{
         })
         //event pointerup (clicked)
         continueButton.on("pointerup", ()=>{
-            this.scene.start(CST.SCENES.PLAY);
+            this.scene.start(CST.SCENES.SCENE2);
             this.input.setDefaultCursor("default");
         })
 

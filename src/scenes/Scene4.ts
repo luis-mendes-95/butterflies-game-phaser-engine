@@ -6,17 +6,17 @@ import { Sprite } from "../Sprite";
 
 
 //calling scene class to render a scene in game
-export class Scene3 extends Phaser.Scene{
+export class Scene4 extends Phaser.Scene{
     constructor(){
         super({
-            key: CST.SCENES.SCENE3
+            key: CST.SCENES.SCENE4
         });
 
 
 
 
         this.isTextImageVisible = false;
-        this.titleQuestion = 'Clique na resposta correta de acordo com as informações do texto.'
+        this.titleQuestion = 'Cliquyyy na resposta correta de acordo com as informações do texto.'
         this.question =  'O que as borboletas estavam fazendo juntas?'
         this.selectedQuestion = 'none'
         this.wrongQuestionText = 'Resposta Incorreta!'
